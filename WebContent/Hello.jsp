@@ -7,12 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="Hello.jsp" method="post" >
-Name<input type="text" name="name"/>
-<input type="submit" value="submit"/>
+
+<%
+String name=request.getParameter("name");
+out.println("Hello<h1>"+name+"<h1>");
+
+
+%>
 
 
 
-</form>
 </body>
 </html>
